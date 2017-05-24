@@ -1,6 +1,6 @@
-*,	*:before, *after	{
-	box-sizing: border-box;
-	position: relative;
+*,*:before, *:after	{
+	box-sizing:border-box;
+	position:relative;
 }
 
 html, body {
@@ -10,29 +10,32 @@ html, body {
 	margin: 0;
 	padding: 0; 
 }
+
 body {
 	height: 100vh;
-	background: #00f;
+	background: #000;
 }
 
 section{
-	color: #000;
+	color: #00f;
 	display:flex;
 	flex-direction:column;
 	justify-content: center;
 	align-items: center;
 }
-@keyframes move{
-	from {left:-200px;}
-	to{left: 200px;}
-}
 
+@keyframes movimento{
+	from {left:-200px;}
+	to {left:200px;}
+}
 
 .ft-perfil {
 	width: 50%;
 	border-radius: 50%;
-	animation: move 5s linear 2s infinite alternate;
+	animation: movimento 5s linear 2s infinite alternate;
 }
+
+
 div img{
 	width: 100px;
 }
