@@ -17,16 +17,24 @@ body {
 }
 
 section{
-	color: #00f;
 	display:flex;
 	flex-direction:column;
 	justify-content: center;
 	align-items: center;
 }
-
+h1,h2{
+	color: red;
+margin:0;
+}
 @keyframes movimento{
 	from {left:-200px;}
 	to {left:200px;}
+
+	/*0%{top:-300;left:-300;}
+	25%{top: 0;left:-100;}
+	50%{top:-300;left: 0; }
+	75%{top: :0;left:100;}
+	100%{top: 300;left: 300;}*/'
 }
 
 .ft-perfil {
@@ -37,5 +45,32 @@ section{
 
 
 div img{
-	width: 100px;
+	width:60px;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	color: #fff;
+}
+.d1{
+	color: blue
+}
+.d2{
+	color: yellow
+}
+@media (max-width: 640px) {
+	.ft-perfil {
+		width: 60%;
+	}
+	@keyframes movimento{
+		from {top:-65px;}
+		to {top: 15px;}		
+	}
+	footer{
+		width: 300%;
+	}
+
 }
